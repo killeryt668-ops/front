@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relapse Case Report - ONC-RL-101</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+            background-color: #f7f9fa;
+        }
+        .report-card {
+            background: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            padding: 35px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .title-block {
+            border-bottom: 2px solid #87CEEB;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .main-title {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .scenario-subtitle {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 15px;
+            color: #00BFFF;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 13px;
+            color: #34495e;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        p, li {
+            font-size: 12px;
+            color: #333333;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #e1e8ed;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .status-bullet {
+            list-style-type: square;
+            color: #2980b9;
+        }
+        .ai-output {
+            background-color: #f0f8ff;
+            border-left: 4px solid #00BFFF;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 4px 4px 0;
+        }
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+                font-size: 11px;
+            }
+            .container {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            h2 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body background ="c:\Users\ASUS\Documents\first_internship\Prototype.docx">
+    <div class="report-card">
+        <div class="title-block">
+            <div class="main-title">RELAPSE CASE REPORT 1</div>
+            <div class="scenario-subtitle">
+                Scenario: First Relapse, Early Relapse (&le;12 months from frontline therapy), Salvage Chemotherapy Followed by ASCT Eligible
+            </div>
+        </div>
+
+        <h2>Case Registration</h2>
+        <table>
+            <tr>
+                <td><strong>Patient ID:</strong> ONC-RL-101</td>
+                <td><strong>Patient Name:</strong> Thomas King</td>
+            </tr>
+            <tr>
+                <td><strong>Age:</strong> 48</td>
+                <td><strong>Gender:</strong> Male</td>
+            </tr>
+            <tr>
+                <td><strong>Primary Diagnosis:</strong> Diffuse Large B-Cell Lymphoma (DLBCL)</td>
+                <td><strong>Frontline Treatment:</strong> R-CHOP (6 cycles)</td>
+            </tr>
+            <tr>
+                <td><strong>Relapse Timeline:</strong> 23 months after completion</td>
+                <td><strong>System Status:</strong> 
+                    <ul>
+                        <li class="status-bullet">Case marked as High Priority</li>
+                        <li class="status-bullet">Auto-triggered MDT Review</li>
+                        <li class="status-bullet">Transplant Eligibility Assessment Enabled</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Sample Input (Auto-pulled from EMR)</h2>
+        <h3>Symptoms:</h3>
+        <ul>
+            <li>Abdominal fullness</li><li>Groin node enlargement</li><li>Weight loss of 5kg</li><li>Fatigue</li>
+        </ul>
+        
+        <h3>Vitals:</h3>
+        <ul>
+            <li>ECOG: 2</li>
+            <li>Blood Pressure: 128/82 mmHg</li>
+            <li>Heart Rate: 80 bpm</li>
+            <li>Organ function: Normal</li>
+        </ul>
+
+        <h3>Lab Values:</h3>
+        <ul>
+            <li>LDH: Elevated</li>
+            <li>CBC: Normal</li>
+            <li>ESR: Significantly Elevated</li>
+            <li>Liver Function Tests: Within normal limits</li>
+            <li>Renal Function: Normal</li>
+        </ul>
+
+        <h2>Clinical Note (Oncologist Module)</h2>
+        <p>The patient presents with symptomatic relapse occurring 23 months after completion of frontline R-CHOP therapy. Clinical findings are consistent with early relapsed DLBCL. Despite aggressive disease recurrence, the patient maintains excellent functional status and has no significant organ dysfunction, making him/her a suitable candidate for intensive salvage therapy followed by consolidation with autologous stem cell transplantation if chemosensitive disease is achieved.</p>
+        <p><strong>Clinical Concern:</strong> Early relapse associated with increased risk of treatment resistance. Rapid initiation of second-line therapy is recommended.</p>
+
+        <h2>Imaging Review (Radiologist Module)</h2>
+        <h3>PET/CT Findings:</h3>
+        <ul>
+            <li>FDG-avid right axillary lymph nodes</li>
+            <li>Multiple mediastinal lymph nodes</li>
+            <li>Small right hilar lymph node</li>
+            <li>SUV max: 20.6</li>
+            <li>No evidence of CNS involvement</li>
+            <li>No extranodal disease identified</li>
+        </ul>
+        <p><strong>Radiology Impression:</strong> Active nodal relapse involving right axillary and mediastinal regions without extranodal dissemination.</p>
+
+        <h2>Histology Review (Pathologist Module)</h2>
+        <p>Excisional biopsy confirms recurrent Diffuse Large B-Cell Lymphoma.</p>
+        <h3>Immunohistochemistry:</h3>
+        <ul>
+            <li>CD20: Positive</li>
+            <li>CD79a: Positive</li>
+            <li>CD19: Positive (retained)</li>
+            <li>BCL6: Positive</li>
+            <li>MUM1: Positive</li>
+            <li>Ki-67: 86%</li>
+        </ul>
+        <p><strong>Pathology Impression:</strong> Recurrent activated B-cell (ABC) subtype DLBCL demonstrating high proliferative activity.</p>
+
+        <div class="ai-output">
+            <h2>AI Clinical Interpretation</h2>
+            <h3>AI Risk Engine Output:</h3>
+            <ul>
+                <li>Relapse Type: Early Relapse</li>
+                <li>Disease Biology: Aggressive</li>
+                <li>Risk Level: High</li>
+                <li>ASCT Eligibility: Positive</li>
+                <li>CAR-T Eligibility: Conditional (if inadequate response to salvage therapy)</li>
+                <li>Recommended Pathway Confidence: 93%</li>
+            </ul>
+            <h3>AI Recommendation:</h3>
+            <p>Initiate platinum-based salvage chemotherapy followed by response assessment. Proceed with autologous stem cell transplantation upon achieving complete or partial remission. Consider CAR-T therapy in case of refractory disease or inadequate response.</p>
+        </div>
+
+        <h2>MDT Discussion Panel</h2>
+        <p><strong>Participants:</strong> Medical Oncologist, Haematologist, Radiologist, Pathologist, Transplant Physician, Oncology Nurse Coordinator</p>
+        <h3>Discussion:</h3>
+        <ul>
+            <li>Early relapse indicates biologically aggressive disease.</li>
+            <li>Patient maintains excellent performance status and adequate organ reserve.</li>
+            <li>Platinum-based salvage chemotherapy is appropriate.</li>
+            <li>Stem cell collection should be planned after demonstrating treatment response.</li>
+            <li>CAR-T therapy should remain available as a subsequent option if salvage therapy fails.</li>
+        </ul>
+
+        <h2>Case Summary</h2>
+        <p>A 48-year-old male with Diffuse Large B-Cell Lymphoma experienced disease relapse 23 months following completion of frontline R-CHOP therapy. Clinical presentation included fatigue, night sweats, and localized lymphadenopathy. PET/CT imaging demonstrated metabolically active lymph node involvement without extranodal disease. Histopathological examination confirmed recurrent Activated B-cell (ABC) subtype with a Ki-67 proliferation index of 86%. AI risk assessment categorized the patient as high-risk early relapse with eligibility for salvage chemotherapy followed by autologous stem cell transplantation. The multidisciplinary team agreed that intensive second-line therapy should be initiated promptly while reserving CAR-T therapy for refractory disease.</p>
+
+        <h2>Treatment Recommendation Engine</h2>
+        <p><strong>Primary Recommendation:</strong> Proceed with platinum-based salvage chemotherapy followed by Autologous Stem Cell Transplantation (ASCT).</p>
+        <h3>Treatment Plan:</h3>
+        <ul>
+            <li>R-ICE chemotherapy (3 cycles)</li>
+            <li>Interim PET/CT response evaluation</li>
+            <li>Stem cell mobilization and collection</li>
+            <li>High-dose conditioning chemotherapy</li>
+            <li>Autologous Stem Cell Transplantation</li>
+            <li>Post-transplant surveillance every three months</li>
+        </ul>
+
+        <h2>Final MDT Consensus Report</h2>
+        <ul>
+            <li><strong>MDT Final Decision:</strong> Patient is eligible for intensive salvage chemotherapy followed by autologous stem cell transplantation. CAR-T therapy should be considered if disease remains refractory or relapses after transplant.</li>
+            <li><strong>Priority Level:</strong> High</li>
+            <li><strong>Outcome:</strong> Approved for Salvage Chemotherapy + ASCT Pathway</li>
+            <li><strong>Digital Sign-off:</strong> Completed by MDT Board</li>
+        </ul>
+    </div>
+</body>
+</html>
